@@ -1,0 +1,85 @@
+html, body {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: black;
+}
+
+/* Below was inspired by https://adventofcode.com/ */
+em, th {
+    color: white;
+    font-style: normal;
+    text-shadow: 0px 0px 5px white;
+    font-weight: 300;
+}
+
+a {
+    color: purple;
+    text-decoration: none;
+}
+
+h2 {
+    color: green;
+    text-shadow: 0px 0px 5px green;
+    font-weight: 500;
+}
+
+p, td {
+    color: lightgray;
+}
+
+.code {
+    font-family: "Source Code Pro", monospace;
+}
+/* Above was inspired by https://adventofcode.com/ */
+
+table {
+    width: 100%;
+}
+
+#container {
+    display: flex;
+}
+
+#content {
+    padding: 1em;
+}
+
+#left-bar {
+    min-width: 200px;
+    flex-grow: 1;
+}
+
+#right-bar {
+    min-width: 200px;
+    flex-grow: 1;
+}
+
+#game-wrapper {
+    position: relative;
+    flex-grow: 5;
+    /* width: 500; */
+    /* padding: 0; */
+    /* margin: auto; */
+}
+
+#gl-canvas {
+    position: relative;
+    left: 0px;
+    top: 0px;
+}
+
+#gl-minimap {
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    box-shadow: 1px 1px 5px 3px rgba(0, 0, 0, 0.5);
+}
+
+#gl-overlay {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}

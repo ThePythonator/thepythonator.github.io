@@ -1,0 +1,27 @@
+body {
+    background-color: lightgrey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    border: 8px solid black;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 150px;
+    background-color: lightslategray;
+    font-size: 40pt;
+    border-radius: 8px;
+}

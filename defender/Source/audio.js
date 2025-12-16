@@ -11,11 +11,11 @@ export const AudioSamples = Object.freeze({
 });
 
 const AUDIO_PATHS = [
-    "../Assets/click.ogg",
-    "../Assets/shoot.ogg",
-    "../Assets/explosion.ogg",
-    "../Assets/player_explosion.ogg",
-    "../Assets/alarm.ogg",
+    "./Assets/click.ogg",
+    "./Assets/shoot.ogg",
+    "./Assets/explosion.ogg",
+    "./Assets/player_explosion.ogg",
+    "./Assets/alarm.ogg",
 ];
 
 export class Audio {

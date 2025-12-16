@@ -1,8 +1,86 @@
 <!DOCTYPE html>
+
 <html>
-  <head>
-      <title>This should redirect to Source/defender.html</title>
-      <meta http-equiv='refresh' content='0; URL=./Source/defender.html'>
-  </head>
-  <body></body>
+
+<head>
+    <title>Planetary defender</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="./Assets/favicon.png">
+    <link rel="stylesheet" href="defender.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="left-bar">
+            <div id="content" class="code">
+                <h2>Information</h2>
+                <p>The <a href="https://wiki.alioth.net/index.php/Thargoid_(classic)">Thargoids</a> have returned...<br/>Defend the planet!</p>
+                <h2>Controls</h2>
+                <!-- <p>
+                    <em>W</em> / <em>UP</em>: Forwards thrust<br/>
+                    <em>A</em> / <em>LEFT</em>: Turn left<br/>
+                    <em>D</em> / <em>RIGHT</em>: Turn right<br/>
+                    <em>SHIFT</em>: Upwards thrust<br/>
+                    <em>SPACE</em>: Fire weapon<br/>
+                </p> -->
+                <table>
+                    <!-- <tr>
+                        <th>Key</th>
+                        <th>Control</th>
+                    </tr> -->
+                    <tr>
+                        <td><em>W</em> / <em>UP</em>:</td>
+                        <td>Forwards thrust</td>
+                    </tr>
+                    <tr>
+                        <td><em>A</em> / <em>LEFT</em>:</td>
+                        <td>Turn left</td>
+                    </tr>
+                    <tr>
+                        <td><em>D</em> / <em>RIGHT</em>:</td>
+                        <td>Turn right</td>
+                    </tr>
+                    <tr>
+                        <td><em>SHIFT</em> / <em>B</em>:</td>
+                        <td>Upwards thrust</td>
+                    </tr>
+                    <tr>
+                        <td><em>SPACE</em>:</td>
+                        <td>Fire weapon</td>
+                    </tr>
+                </table>
+                <p>Note: If using <em>SHIFT</em> instead of <em>B</em>, you may need to disable <em>sticky keys</em>!</p>
+                <h2>HUD</h2>
+                <p>
+                    At the bottom, three bars show the <em>fuel remaining</em>, <em>altitude</em>, and <em>ammo remaining</em>.<br/>
+                    In the top left there is a top-down view of the game map, with a <em>white triangle</em> marking your location, and a <em>red triangle</em> for each enemy within range.<br/>
+                    In the top right the number of <em>Thargoids remaining</em> is displayed.
+                </p>
+            </div>
+        </div>
+        <div id="game-wrapper">
+            <!-- Main canvas and minimap will be added here -->
+        </div>
+        <div id="right-bar">
+            <div id="content" class="code">
+                <h2 >Highscores</h2>
+                <p id="highscores"></p>
+
+                <h2>Scoring</h2>
+                <p>You are awarded <em>50</em> points per Thargoid shot down, but lose <em>1</em> point per shot fired. At the end of each successful round, you gain up to <em>100</em> bonus points, depending on how much fuel you have remaining.</p>
+
+                <h2>Environment</h2>
+                <p>Each level will alternate between <em>Earth</em> and the <em>Thargoid's home planet</em> (which looks remarkably similar to the Moon with lava on it!). Each level will have <em>2 more Thargoids</em> than the last.</p>
+            </div>
+        </div>
+    </div>
+    <script type="importmap">
+        { "imports": {
+            "three": "./Common/three.js-r170/build/three.module.js"
+        } }
+    </script>
+    <script type="module" charset="UTF-8" src="./Source/game.js"></script>
+</body>
+
 </html>

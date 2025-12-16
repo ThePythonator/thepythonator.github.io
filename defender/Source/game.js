@@ -1,5 +1,5 @@
 import * as THREE from '../Common/three.js-r170/build/three.module.js';
-import { OrbitControls } from '../Common/three.js-r170/examples/jsm/controls/OrbitControls.js';
+// import { OrbitControls } from '../Common/three.js-r170/examples/jsm/controls/OrbitControls.js';
 import Stats from '../Common/three.js-r170/examples/jsm/libs/stats.module.js';
 
 import { Audio, AudioSamples } from './audio.js';

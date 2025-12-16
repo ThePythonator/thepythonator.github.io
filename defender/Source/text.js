@@ -26,7 +26,7 @@ export class TextBox {
         // Button text
         this.text_mesh = null;
         const loader = new TTFLoader();
-        loader.load("../Common/three.js-r170/examples/fonts/ttf/kenpixel.ttf", (response) => {
+        loader.load("./Common/three.js-r170/examples/fonts/ttf/kenpixel.ttf", (response) => {
             const font = new Font(response);
             const geometry = new TextGeometry(text, { font: font, size: size, depth: 0.1 });
             geometry.computeBoundingBox();

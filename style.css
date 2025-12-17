@@ -1,13 +1,22 @@
 body {
-    background-color: lightgrey;
+    background-color: #3e6ab2;
+    background-image: url("ssb_background.png");
+    background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 10px;
 }
 
 h1 {
-    font-size: 32pt;
+    font-size: 36pt;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.header {
+    text-align: center;
+    width: 100%;
+    background-color: rgba(108, 174, 255, 0.75);
 }
 
 .container {
@@ -26,15 +35,15 @@ h1 {
     align-items: center;
     width: 320px;
     height: 240px;
-    background-color: lightslategray;
+    background-color: rgba(108, 174, 255, 0.75);
     border-radius: 8px;
     position: relative;
 }
 
 .box img {
     display: block;
-    width: 100%;
     height: 100%;
+    width: 100%;
     object-fit: cover;
     position: absolute;
     border-radius: 8px;
@@ -46,7 +55,7 @@ h1 {
     font-size: 16pt;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 100%;
-    background-color: rgba(119, 136, 153, 0.85);
+    background-color: rgba(108, 174, 255, 0.75);
     border-bottom: 1px solid black;
     border-radius: 8px 8px 0px 0px;
     padding-top: 10px;
@@ -63,10 +72,12 @@ h1 {
     flex-direction: column;
     justify-content: center;
     height: 100%;
+    width: 100%;
+    box-sizing: border-box;
     text-align: center;
     font-size: 14pt;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: rgba(119, 136, 153, 0.65);
+    background-color: rgba(108, 174, 255, 0.75);
     /* border: 1px solid black; */
     border-radius: 0px 0px 8px 8px;
     /* padding-top: 5px; */
